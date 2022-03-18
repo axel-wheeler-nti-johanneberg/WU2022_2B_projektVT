@@ -90,6 +90,10 @@ main {
     text-align: justify;
 }
 
+.group {
+    margin: 2rem 0;
+}
+
 .cta-button {
     font-family: capitana,sans-serif;
     font-size: 1.1rem;
@@ -104,6 +108,7 @@ main {
 }
 
 .center-information {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,6 +171,10 @@ main {
         font-size: 26px;
     }
 
+    .group {
+        margin: 1rem 0;
+    }
+
     #product-view {
         height: calc(100vh - var(--header-height));
         display: flex;
@@ -189,5 +198,53 @@ main {
     .desktop-split {
         flex: 50%;
     }
-    
+
+    .desktop-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .desktop-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #buy-image-2-wrapper {
+        height: 50vh;
+        width: 50%;
+    }
+
+    #buy-image-2 {
+        height: 100%;
+    }
+
+    #buy-image-3 {
+        width: 50vw;
+    }
+
+    .information-section {
+        width: 39vw;
+        margin: 0 1.5rem;
+    }
+
+    .fullwidth-section {
+        width: 100vw;
+        margin-left: calc(var(--edge-margin) * -1);
+        margin-right: calc(var(--edge-margin) * -1);
+    }
+
+    .fullwidth-section:first-child {
+        width: auto;
+        margin-left: calc(var(--edge-margin) * -1);
+    }
+    .fullwidth-section:nth-child(2) {
+        width: auto;
+        margin-right: calc(var(--edge-margin) * -1);
+    }
 }
