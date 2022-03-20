@@ -26,7 +26,19 @@ body::-webkit-scrollbar {
   }
 
 header {
+    display: flex;
+    justify-content: space-between;
     height: var(--header-height);
+    border-bottom: 2px solid #e2e2e2;
+    padding: 0 0.6rem;
+}
+nav {
+    display: flex;
+}
+
+h1 {
+    font-size: calc(var(--header-height)*0.6);
+    font-weight: 600;
 }
 
 main {
@@ -52,14 +64,15 @@ main {
 }
 
 
-.content-wrapper {
+main {
     box-sizing: border-box;
     padding: var(--edge-margin);
+    padding-top: 0;
 }
 
 #product-view {
     width: 100%;
-    height: calc(100vh - var(--edge-margin) - var(--header-height));
+    height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
     gap: var(--edge-margin);
@@ -107,7 +120,7 @@ main {
     margin-top: 10px;
 }
 
-.center-information {
+.center-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -161,6 +174,11 @@ main {
     object-fit: cover;
 }
 
+#office-image {
+    width: 90%;
+    margin-top: var(--edge-margin);
+}
+
 @media screen and (min-width: 410px) {
     :root {
         --header-height: 50px;
@@ -171,12 +189,32 @@ main {
         font-size: 26px;
     }
 
+    .typography-title {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    main {
+        padding: var(--edge-margin);
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.9rem;
+        width: 23vw;
+    }
+
+    nav a {
+        margin: auto 0;
+    }
+
     .group {
-        margin: 1rem 0;
+        margin: 1.5rem 0;
     }
 
     #product-view {
-        height: calc(100vh - var(--header-height));
+        height: calc(100vh - var(--edge-margin) * 2 - var(--header-height));
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -192,7 +230,20 @@ main {
     }
 
     #product-view-information {
-        width: 35vw;
+        width: 38vw;
+    }
+
+    .cta-button {
+        font-family: capitana,sans-serif;
+        font-size: 0.8rem;
+        border-radius: 1000rem;
+        width: fit-content;
+        height: 1.6rem;
+        padding: 0.4rem 0.85rem;
+        line-height: 0;
+        color: white;
+        background-color: var(--blue);
+        margin-top: 10px;
     }
 
     .desktop-split {
@@ -213,6 +264,21 @@ main {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .center-information {
+        margin-top: 2rem;
+    }
+
+    .center-information p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        width: 39vw;
+    }
+
+    .center-information h2 {
+        font-size: 3.7rem;
+        font-weight: 500;
     }
 
     #buy-image-2-wrapper {
@@ -246,5 +312,18 @@ main {
     .fullwidth-section:nth-child(2) {
         width: auto;
         margin-right: calc(var(--edge-margin) * -1);
+    }
+
+    #office-image {
+        width: auto;
+        height: calc(100vh - var(--edge-margin) * 2 - var(--header-height) - 5rem);
+        object-fit: cover;
+        margin-top: 0;
+        margin-bottom: -1.5rem
+    }
+
+    #social-links {
+        display: flex;
+        flex-direction: row;
     }
 }
