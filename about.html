@@ -11,87 +11,74 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>augue</h1>
         <nav>
-            <a>home</a>
-            <a>buy</a>
-            <a>about</a>
+            <a class="typography-copy">home</a>
+            <a class="typography-copy">buy</a>
+            <a class="typography-copy">about</a>
         </nav>
+        <button id="menu-button">burg</button>
     </header>
+    <aside id="aside-menu">
+        <nav>
+            <a class="typography-section-heading">home</a>
+            <a class="typography-section-heading">buy</a>
+            <a class="typography-section-heading">about</a>
+        </nav>
+    </aside>
     <main>
-        <section class="center-section">
-            <img src="img/office.jpg" id="office-image">
-        </section>
-
-        <section class="center-information center-section group">
-            <h2>
-                välkommen
-            </h2>
-            <!-- <p class="typography-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros quis lacinia
-                    sollicitudin, </p> -->
-            <p class="typography-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros quis lacinia
-                sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse finibus
-                diam imperdiet maximus sagittis.
-            </p>
-        </section>
-        <article class="desktop-reverse group">
-            <div class="fullwidth-section" id="buy-image-2-wrapper">
-                <img src="img/socialmedia.png" id="buy-image-2">
+        <article class="about-hero">
+            <div id="about-picture">
+                <img alt="Image of office" src="img/office.webp" id="office-image">
             </div>
-            <section class="information-section">
-                <h2 class="typography-title">
-                    våra sociala medier
-                </h2>
-                <p class="typography-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros quis lacinia
-                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse
-                    finibus
-                    diam imperdiet maximus sagittis.
-                </p>
+        </article>
+        <section class="center-section" id="about-hero-section">
+            <h2 class="typography-heading">välkommen</h2>
+            <img alt="⌄" src="img/chevron-down.svg">
+            <p class="typography-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum,</p>
+        </section>
+        <article class="information-section" id="social-section">
+            <img alt="Illustration of contact" src="img/socialmedia.webp">
+            <section class="limit-width">
+                <h2 class="typography-heading">sociala medier</h2>
+                <p class="typography-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros
+                    quis lacinia
+                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse finibus
+                    diam imperdiet maximus sagittis.</p>
                 <div id="social-links">
-                    <a><img></a>
-                    <a><img></a>
-                    <a><img></a>
+                    <a><img alt="Facebook" src="img/facebook-logotype.svg"></a>
+                    <a><img alt="Twitter" src="img/twitter-logotype.svg"></a>
+                    <a><img alt="Instagram" src="img/instagram-logotype.svg"></a>
                 </div>
             </section>
         </article>
-        <article class="desktop-row group">
-            <div class="fullwidth-section">
-                <img src="img/map.png" id="buy-image-3">
-            </div>
-            <section class="information-section">
-                <h2 class="typography-title">
-                    hitta till oss
-                </h2>
-                <p class="typography-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros quis lacinia
-                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse
-                    finibus
-                    diam imperdiet maximus sagittis.
-                </p>
+        <article class="information-section desktop-reverse" id="map-section">
+            <img alt="Secondary closeup of watchface" src="img/map.webp">
+            <section class="limit-width">
+                <h2 class="typography-heading">hitta till oss</h2>
+                <p class="typography-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros
+                    quis lacinia
+                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse finibus
+                    diam imperdiet maximus sagittis.</p>
             </section>
         </article>
-        <article class="desktop-reverse group">
-            <div class="fullwidth-section" id="buy-image-2-wrapper">
-                <img src="img/product_image_2.jpg" id="buy-image-2">
-            </div>
-            <section class="information-section">
-                <h2 class="typography-title">
-                    kontakta oss
-                </h2>
-                <p class="typography-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros quis lacinia
-                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse
-                    finibus
-                    diam imperdiet maximus sagittis.
-                </p>
+        <article class="information-section" id="contact-section">
+            <img alt="Illustration of contact" src="img/socialmedia.webp">
+            <section class="limit-width">
+                <h3 class="typography-copy">kontakt</h3>
+                <h2 class="typography-heading">Funderar du på nåt?</h2>
+                <p class="typography-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, eros
+                    quis lacinia
+                    sollicitudin, sapien enim pharetra nisl, vel condimentum massa augue ut ipsum. Suspendisse finibus
+                    diam imperdiet maximus sagittis.</p>
             </section>
         </article>
     </main>
-    <footer>footer</footer>
+    <footer>
+        <p class="typography-copy">© augue 2022</p>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
