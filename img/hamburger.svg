@@ -1,0 +1,16 @@
+<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="32" height="32">
+    <g id="hamburger-upper-line-group_to" transform="translate(24,12.142394)">
+        <g id="hamburger-upper-line-group_tr" transform="rotate(0)">
+            <g id="hamburger-upper-line-group" transform="scale(1,-1) translate(-19,-12)">
+                <line id="hamburger-upper-line" x1="3" y1="12" x2="19" y2="12" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" />
+            </g>
+        </g>
+    </g>
+    <g id="hamburger-lower-line-group_to" transform="translate(24,20)">
+        <g id="hamburger-lower-line-group_tr" transform="rotate(0)">
+            <g id="hamburger-lower-line-group" transform="translate(-19,-20)">
+                <line id="hamburger-lower-line" x1="3" y1="20" x2="19" y2="20" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" />
+            </g>
+        </g>
+    </g>
+</svg>

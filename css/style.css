@@ -76,7 +76,8 @@ header>nav {
 }
 
 #menu-button {
-    padding-right: 64px;
+    /* padding-right: 64px; */
+    background-color: white;
 }
 
 
@@ -321,6 +322,10 @@ main>* {
         display: none;
     }
 
+    main {
+        margin-top: 50px;
+    }
+
     main>* {
         max-width: calc(1190px + var(--edge-margin)*2);
         padding-left: var(--edge-margin);
@@ -330,7 +335,7 @@ main>* {
     }
 
     .product-hero {
-        height: calc(100vh - var(--header-height));
+        height: calc(100vh - var(--header-height) - 50px);
         max-width: calc(1190px + var(--edge-margin)*2);
         padding-left: var(--edge-margin);
         padding-right: var(--edge-margin);
