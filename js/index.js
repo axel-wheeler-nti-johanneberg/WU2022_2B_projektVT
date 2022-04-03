@@ -3,7 +3,8 @@ let aside = document.querySelector('#aside-menu')
 let button = document.querySelector('#menu-button')
 let body = document.querySelector('body')
 let menuOpen = false
-button.onclick = () => {
+
+button.addEventListener("click", () => {
   menuOpen = !menuOpen
   aside.classList.toggle('menu-open')
   header.classList.toggle('menu-open')
@@ -13,10 +14,4 @@ button.onclick = () => {
     left: 0,
     behavior: 'smooth'
   });
-}
-
-// window.scrollTo({
-//     top: 100,
-//     left: 100,
-//     behavior: 'smooth'
-//   });
+})

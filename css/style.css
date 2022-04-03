@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scrollbar-width:none;
 }
 
 * {
@@ -305,7 +306,7 @@ footer {
 }
 
 #s1 {
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     grid-area: s1;
 }
 
@@ -341,7 +342,7 @@ footer {
 }
 
 #job-hero.keyword-section>section>h2:nth-child(2) {
-    line-height: 5rem;
+    line-height: 7rem;
 }
 
 .job-table {
@@ -576,7 +577,7 @@ footer {
     }
 
     #s1 {
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
     }
 
     @media screen and (max-width: 870px) {
