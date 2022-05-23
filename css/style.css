@@ -355,7 +355,26 @@ footer {
     border: 2px solid white;
 }
 
-@media screen and (min-width: 420px) {
+#distance-section {
+    background-image: url("../img/skiing.webp");
+    background-size: cover;
+background-position: center;
+    height: 100vh;
+}
+
+#distance-section .dark-theme, #office-section .dark-theme {
+    background-color: initial;
+}
+
+#office-section {
+    background-image: url("../img/office2.webp");
+    background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
     :root {
         --edge-margin: 90px;
     }
@@ -448,36 +467,7 @@ footer {
         box-sizing: border-box;
     }
 
-    .product-hero {
-        height: calc(100vh - var(--header-height) - 50px);
-        max-width: calc(1190px + var(--edge-margin)*2);
-        padding-left: var(--edge-margin);
-        padding-right: var(--edge-margin);
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        gap: 96px;
-        justify-content: space-between;
 
-    }
-
-    .product-hero section {
-        display: flex;
-        flex-direction: column;
-        max-width: 340px;
-        justify-content: center;
-    }
-
-    #product-gallery {
-        width: 50%;
-
-    }
-
-    #product-gallery img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 
     .center-section {
         padding: 128px 0;
@@ -487,7 +477,7 @@ footer {
         max-width: calc(1190px + var(--edge-margin)*2);
         display: flex;
         flex-direction: row;
-        padding: 128px 0;
+        padding: 128px ;
         gap: 96px;
         justify-content: space-between;
     }
@@ -500,6 +490,7 @@ footer {
     }
 
     .information-section img {
+        object-fit: contain;
         width: 50%;
     }
 
@@ -539,9 +530,13 @@ footer {
     }
 
     .fullwidth-wrapper article {
-        flex-basis: calc(1190px + var(--edge-margin)*2);
+        flex-basis: min(calc(1190px + var(--edge-margin)*2), calc(100vw - var(--edge-margin)*2));
         flex-shrink: 0;
         padding: 0;
+    }
+
+    .fullwidth-wrapper .information-section img {
+        object-fit: cover;
     }
 
     .fill {
@@ -580,6 +575,40 @@ footer {
         aspect-ratio: 1 / 1;
     }
 
+
+    @media screen and (min-width: 870px) {
+        .product-hero {
+            height: calc(100vh - var(--header-height) - 50px);
+            max-width: calc(1190px + var(--edge-margin)*2);
+            padding-left: var(--edge-margin);
+            padding-right: var(--edge-margin);
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 96px;
+            justify-content: space-between;
+    
+        }
+    
+        .product-hero section {
+            display: flex;
+            flex-direction: column;
+            max-width: 340px;
+            justify-content: center;
+        }
+        
+        #product-gallery {
+            width: 50%;
+    
+        }
+    
+        #product-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     @media screen and (max-width: 870px) {
         #sustainability-hero-grid {
             grid-template-areas: 
@@ -591,6 +620,14 @@ footer {
             grid-template-rows: repeat(7, 1fr);
             grid-template-columns: repeat(3, 1fr);
         }
+        .information-section {
+            gap: 48px
+        }
+        
+        .product-hero section {
+            padding: 0 40px;
+        }
+
     }
 
     .job-table {
