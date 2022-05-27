@@ -366,6 +366,12 @@ background-position: center;
     background-color: initial;
 }
 
+#distance-section h2, #distance-section h3, #office-section h2, #office-section h3 {
+    background-color: black;
+    width: fit-content;
+    border: 8px solid black;
+}
+
 #office-section {
     background-image: url("../img/office2.webp");
     background-size: contain;
